@@ -62,7 +62,7 @@ GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var value = Math.random() < 0.9 ? 0 : 1;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
-
+    console.log(value);
     this.grid.insertTile(tile);
   }
 };
@@ -138,7 +138,8 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += (merged.value * this.tileSequence[merged.value]);
+          console.log(merged.value +" * "+ self.tileSequence[merged.value])
+          self.score += (merged.value * self.tileSequence[merged.value]);
 
           // The mighty 144 tile
           if (merged.value === 11) self.won = true;
