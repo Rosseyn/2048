@@ -2,7 +2,8 @@ function Tile(position, value) {
   this.tileSequence = [1,2,3,5,8,13,21,34,55,89,144];
   this.x                = position.x;
   this.y                = position.y;
-  this.value            = this.tileSequence[value] || 1;
+  this.value            = value || 0;
+  this.display          = this.tileSequence[value]
 
   this.previousPosition = null;
   this.mergedFrom       = null; // Tracks tiles that merged together
