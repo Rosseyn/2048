@@ -5,7 +5,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.actuator     = new Actuator;
 
   this.startTiles   = 2;
-  this.tileSequence = [1,2,3,5,8,13,21,34,55,89,144]
+  this.tileSequence = [1,2,3,5,8,13,21,34,55,89,144];
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
