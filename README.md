@@ -3,7 +3,7 @@ A small clone of [2048](http://gabrielecirulli.github.io/2048/), which is a clon
 
 Have fun!
 
-
+[Play here.] (http://rosseyn.github.io/2048-Fibonacci/)
 
 
 
